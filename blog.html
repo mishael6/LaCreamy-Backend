@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA CREAMY CAKEIST - Blog</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff9f3;
+      color: #3a2a1a;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fffaf4;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #d4b47f;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      height: 60px;
+      width: auto;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #3a2a1a;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #b08e58;
+    }
+    nav ul li a.active {
+      color: #c5a46d;
+      font-weight: 600;
+    }
+    .blog-section {
+      padding: 60px 20px;
+      background: linear-gradient(to bottom, #fffdf8, #fff9f3);
+      text-align: center;
+    }
+    .blog-section h2 {
+      font-size: 2.5em;
+      color: #3a2a1a;
+      margin-bottom: 20px;
+    }
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .blog-post {
+      background: #fffaf4;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: left;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .blog-post:hover {
+      transform: translateY(-5px);
+    }
+    .blog-post img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .blog-post h3 {
+      color: #c5a46d;
+      margin-bottom: 10px;
+    }
+    .blog-post p {
+      color: #6b5440;
+      font-size: 0.95em;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 10;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background: #fffaf4;
+      border-radius: 12px;
+      padding: 30px;
+      width: 80%;
+      max-width: 700px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      text-align: left;
+      animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .close-btn {
+      background: none;
+      border: none;
+      font-size: 24px;
+      float: right;
+      cursor: pointer;
+      color: #3a2a1a;
+    }
+    .close-btn:hover {
+      color: #b08e58;
+    }
+    footer {
+      background: #fffaf4;
+      padding: 20px;
+      text-align: center;
+      border-top: 2px solid #d4b47f;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="photo_2022-11-27_15-40-41.jpg" alt="LA CREAMY CAKEIST Logo" class="logo">
+      <h1>LA CREAMY CAKEIST</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.php">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="blog-section">
+    <h2>Our Sweet Blog</h2>
+    <div class="blog-container">
+      <div class="blog-post" onclick="openModal('modal1')">
+        <img src="birthday cakes.jpg" alt="Chocolate Cake Trends">
+        <h3>Chocolate Cake Trends for 2025</h3>
+        <p>Discover the new wave of chocolate cake designs taking over bakeries this year, from glossy ganache finishes to minimalist decor.</p>
+      </div>
+      <div class="blog-post" onclick="openModal('modal2')">
+        <img src="bride to be cake.jpg" alt="Custom Wedding Cakes">
+        <h3>Custom Wedding Cakes That Tell a Story</h3>
+        <p>Every couple is unique, and so should be their wedding cake. Learn how we craft designs that reflect love stories beautifully.</p>
+      </div>
+      <div class="blog-post" onclick="openModal('modal3')">
+        <img src="tired cakes.jpg" alt="Healthy Cake Recipes">
+        <h3>Healthier Cake Options That Still Taste Great</h3>
+        <p>We share tips and ingredients to make your cakes more wholesome without compromising on that creamy, decadent flavor.</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('modal1')">×</button>
+      <h2>Chocolate Cake Trends for 2025</h2>
+      <p>This year’s chocolate cake trends celebrate simplicity and luxury — from mirror glaze finishes to rustic, semi-naked layers. Learn how to master the art of rich chocolate ganache and pair it with subtle flavors like sea salt caramel or espresso.</p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('modal2')">×</button>
+      <h2>Custom Wedding Cakes That Tell a Story</h2>
+      <p>At LA CREAMY CAKEIST, we believe every couple deserves a cake as unique as their love story. From elegant floral patterns to cultural-inspired designs, we bring your dream cake to life with precision and passion.</p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal('modal3')">×</button>
+      <h2>Healthier Cake Options That Still Taste Great</h2>
+      <p>Who says healthy can’t be delicious? Try our almond flour sponge, natural sweeteners, and fruit-based creams that keep flavor high and calories low — perfect for guilt-free indulgence!</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 LA CREAMY CAKEIST | Crafted with love and buttercream in Kumasi, Ghana</p>
+  </footer>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'flex';
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+  </script>
+</body>
+</html>

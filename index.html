@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA CREAMY CAKEIST - Home</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    /* Animated Background with visible fallback */
+    .animated-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-size: cover;
+      background-position: center;
+      animation: backgroundSlide 30s infinite alternate ease-in-out;
+    }
+
+    @keyframes backgroundSlide {
+      0% { background-image: url('images/cake-bg1.jpg'); }
+      33% { background-image: url('images/cake-bg2.jpg'); }
+      66% { background-image: url('images/cake-bg3.jpg'); }
+      100% { background-image: url('images/cake-bg4.jpg'); }
+    }
+
+    header {
+      background: rgba(255, 249, 243, 0.8);
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #d4b47f;
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(8px);
+      z-index: 10;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      height: 60px;
+      width: auto;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #3a2a1a;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #b08e58;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #3a2a1a;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(6px);
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      color: #c5a46d;
+      margin-bottom: 10px;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: #5a4632;
+      margin-bottom: 20px;
+      animation: fadeInUp 1.8s ease;
+    }
+
+    .hero button {
+      background: #c5a46d;
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+      animation: fadeIn 2s ease;
+    }
+
+    .hero button:hover {
+      background: #b08e58;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      background: rgba(255, 249, 243, 0.85);
+      padding: 15px;
+      text-align: center;
+      border-top: 2px solid #d4b47f;
+      font-size: 0.9em;
+      color: #3a2a1a;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-bg"></div>
+
+  <header>
+    <div class="logo-container">
+      <img src="photo_2022-11-27_15-40-41.jpg" alt="LA CREAMY CAKEIST Logo" class="logo">
+      <h1>LA CREAMY CAKEIST</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.php">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to LA CREAMY CAKEIST</h1>
+    <p>Where every cake tells a story — baked with love, layered with passion, and topped with joy.</p>
+    <button onclick="window.location.href='menu.html'">Explore Our Cakes</button>
+  </section>
+
+  <footer>
+    <p>© 2025 LA CREAMY CAKEIST | Crafted with love and buttercream in Kumasi, Ghana</p>
+  </footer>
+</body>
+</html>

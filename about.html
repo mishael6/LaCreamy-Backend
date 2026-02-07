@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA CREAMY CAKEIST - About</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff9f3;
+      color: #3a2a1a;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fffaf4;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #d4b47f;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      height: 60px;
+      width: auto;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #3a2a1a;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #b08e58;
+    }
+    nav ul li a.active {
+      color: #c5a46d;
+      font-weight: 600;
+    }
+    .about-section {
+      padding: 60px 20px;
+      background: linear-gradient(to bottom, #fffdf8, #fff9f3);
+      text-align: center;
+    }
+    .about-section h2 {
+      font-size: 2.5em;
+      color: #3a2a1a;
+      margin-bottom: 20px;
+    }
+    .about-section p {
+      font-size: 1.1em;
+      color: #6b5440;
+      line-height: 1.7;
+      max-width: 900px;
+      margin: 10px auto 40px;
+    }
+    .mission {
+      background: #fffaf4;
+      padding: 40px;
+      border-radius: 16px;
+      max-width: 900px;
+      margin: 0 auto 40px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .mission h3 {
+      color: #c5a46d;
+      margin-bottom: 15px;
+    }
+    .team-section {
+      padding: 40px 20px;
+      background: #fffdf8;
+      text-align: center;
+    }
+    .team-section h3 {
+      color: #3a2a1a;
+      margin-bottom: 20px;
+    }
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .team-member {
+      background: #fffaf4;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .team-member:hover {
+      transform: translateY(-5px);
+    }
+    .team-member img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    .team-member h4 {
+      color: #c5a46d;
+      margin-bottom: 5px;
+    }
+    .team-member p {
+      color: #6b5440;
+      font-size: 0.95em;
+    }
+    footer {
+      background: #fffaf4;
+      padding: 20px;
+      text-align: center;
+      border-top: 2px solid #d4b47f;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="photo_2022-11-27_15-40-41.jpg" alt="LA CREAMY CAKEIST Logo" class="logo">
+      <h1>LA CREAMY CAKEIST</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.php">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <h2>About LA CREAMY CAKEIST</h2>
+    <p>Founded in the heart of Kumasi, LA CREAMY CAKEIST is your destination for premium cakes and pastries crafted with love, passion, and creativity. From birthdays to weddings, we design each cake to make your moments unforgettable.</p>
+    <div class="mission">
+      <h3>Our Mission</h3>
+      <p>To create artistic, flavorful, and high-quality cakes that not only delight your taste buds but also capture the emotions of your special occasions. We believe every cake tells a story — and we’re here to make yours deliciously beautiful.</p>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <h3>Meet Our Team</h3>
+    <div class="team">
+      <div class="team-member">
+        <img src="sis mabel.jpg" alt="Head Pastry Chef">
+        <h4>Mrs. Mabel Daniel Saim</h4>
+        <p>Head Pastry Chef</p>
+      </div>
+      <div class="team-member">
+        <img src="saim.jpg" alt="Manager">
+        <h4>Dr.Daniel Saim</h4>
+        <p>General Manager</p>
+      </div>
+      <div class="team-member">
+        <img src="delivery.jpg" alt="Delivery Guy">
+        <h4>Ayaga Agyebaworo</h4>
+        <p>Delivery Guy</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 LA CREAMY CAKEIST | Crafted with love and buttercream in Kumasi, Ghana</p>
+  </footer>
+</body>
+</html>
