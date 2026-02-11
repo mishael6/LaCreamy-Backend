@@ -1,16 +1,12 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "akosua666";  // Leave empty or put your password
-$dbname = "Lacreamy";
+$password = "";
+$dbname = "lacreamy";
 
-// Enable error reporting
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-try {
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    echo "Connected successfully!";
-} catch (Exception $e) {
-    die("Connection failed: " . $e->getMessage());
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 ?>
