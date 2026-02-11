@@ -2,7 +2,7 @@
 // Try 127.0.0.1 instead of localhost
 $servername = "127.0.0.1";
 $username = "root";
-$password = "akosua666";
+$password = "";
 $dbname = "lacreamy";
 
 try {
