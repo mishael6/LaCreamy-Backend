@@ -209,7 +209,7 @@ $orders_result = $conn->query($orders_query);
         <h1>🎂 LA CREAMY CAKEIST - Admin Dashboard</h1>
         <div>
             <span>Welcome, <?php echo htmlspecialchars($_SESSION['admin_username']); ?></span>
-            <a href="admin_logout.php">Logout</a>
+            <a href="logout.php">Logout</a>
         </div>
     </div>
 
