@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LA CREAMY CAKEIST - Contact</title>
-  <style>
+  <!--<style>
     body {
       font-family: 'Poppins', sans-serif;
       background: #fff9f3;
@@ -205,7 +205,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       color: #721c24;
       border: 1px solid #f5c6cb;
     }
-  </style>
+  </style>-->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>

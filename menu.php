@@ -61,7 +61,7 @@ foreach ($_SESSION['cart'] as $item) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LA CREAMY CAKEIST - Menu</title>
-  <style>
+  <!--<style>
     body {
       font-family: 'Poppins', sans-serif;
       background: #fff9f3;
@@ -348,7 +348,8 @@ foreach ($_SESSION['cart'] as $item) {
       margin-top: 40px;
       font-size: 0.9em;
     }
-  </style>
+  </style>-->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
