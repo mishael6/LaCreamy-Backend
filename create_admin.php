@@ -3,7 +3,7 @@ require_once 'db.php';
 
 // Generate a new password hash
 $username = "admin";
-$password = "admin123";
+$password = "admin12345";
 $email = "admin@lacreamy.com";
 
 // Create password hash
